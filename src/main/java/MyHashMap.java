@@ -9,6 +9,9 @@ public class MyHashMap<K,V> implements InterfaceMap<K,V> {
 
     @Override
     public void put(K key, V value) {
+        if (key == null) {
+            throw new NullPointerException("Невозможно использовать null вместо ключа");
+        }
         if (size >= (array.length * LOAD_FACTOR)) {
             doubleArray();
         }
@@ -41,6 +44,9 @@ public class MyHashMap<K,V> implements InterfaceMap<K,V> {
 
     @Override
     public V get(K key) {
+        if (key == null) {
+            throw new NullPointerException("Невозможно использовать null вместо ключа");
+        }
         int position = getElementPosition(key, array.length);
         Entry<K,V> existedElement = array[position];
         while (existedElement != null) {
@@ -56,6 +62,9 @@ public class MyHashMap<K,V> implements InterfaceMap<K,V> {
 
     @Override
     public boolean remove(K key) {
+        if (key == null) {
+            throw new NullPointerException("Невозможно использовать null вместо ключа");
+        }
         int position = getElementPosition(key, array.length);
         Entry existenElement = array[position];
         if (existenElement != null && existenElement.key.equals(key)) {
