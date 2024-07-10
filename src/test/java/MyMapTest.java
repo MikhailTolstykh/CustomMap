@@ -24,14 +24,14 @@ public class MyMapTest {
     }
 
     @Test
-    public void checkRemove() {
-        for (int i = 0; i < 10; i++) {
+    public void checkRemoveMillionElement() {
+        for (int i = 0; i < 1000000; i++) {
             String key = ("Key" + i);
             Integer value = (i);
             map.put(key, value);
         }
         // Проверяем что размер мапы соответствует количеству добавленных обьектов
-        assertEquals(10, map.size());
+        assertEquals(1000000, map.size());
 
         // Создаем ключ по которому будем удалять
         String keyForDelete = "Key1";
@@ -39,7 +39,7 @@ public class MyMapTest {
         assertTrue(map.remove(keyForDelete));
 
         //снова проверяем количество обьектов после удаления одного
-        assertEquals(9, map.size());
+        assertEquals(999999, map.size());
 
     }
 
