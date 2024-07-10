@@ -8,6 +8,6 @@ public interface InterfaceMap< K,V> {
 
     public int size();
 
-
+    public  int getArrayLenght();
 
 }

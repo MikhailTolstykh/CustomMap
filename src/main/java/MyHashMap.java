@@ -98,7 +98,7 @@ public class MyHashMap<K,V> implements InterfaceMap<K,V> {
         return Math.abs(key.hashCode() % arrayLenght);
     }
 
-    private void doubleArray() {
+    public void doubleArray() {
         Entry<K,V>[] newArray = new Entry[array.length * 2];
         for (Entry element : array) {
             Entry <K,V>existElement = element;
@@ -110,6 +110,11 @@ public class MyHashMap<K,V> implements InterfaceMap<K,V> {
         array = newArray;
     }
 
+
+    @Override
+    public  int getArrayLenght(){
+        return array.length;
+    }
 
     private static class Entry<K,V> {
         private K key;
