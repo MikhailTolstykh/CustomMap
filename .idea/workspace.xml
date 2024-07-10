@@ -61,7 +61,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyMapTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="CustomHashMap" />
@@ -130,8 +130,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyMapTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MyMapTest" />
         <item itemvalue="JUnit.MyMapTestTest.whenPut100ElementsWith10DifferentKeysThenSize10" />
         <item itemvalue="JUnit.MyMapTestTest.whenPut100ElementsWith10DifferentKeysThenSize10" />
         <item itemvalue="JUnit.MyMapTestTest.put100ElementsWith10DifferentKeysThenSize10" />
@@ -161,6 +161,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CustomHashMap$MyMapTest.ic" NAME="MyMapTest Coverage Results" MODIFIED="1720601095638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CustomHashMap$MyMapTest.ic" NAME="MyMapTest Coverage Results" MODIFIED="1720603379725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
